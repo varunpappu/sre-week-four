@@ -4,5 +4,8 @@ cpuLimit: "1"
 memoryLimit: "4Gi"
 upcommerce:
   image: uonyeka/upcommerce:v3
-
-
+canary:
+  image: uonyeka/canary:linux-amd64
+  replicaCount: 1
+  srcPort: 5003
+  targetPort: 5003
